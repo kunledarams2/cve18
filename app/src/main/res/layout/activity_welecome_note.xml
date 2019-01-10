@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.WelecomeNote"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:title="      IMPORTANT INSTRUCTION"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#fff"/>
+
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/instruction"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Reject"
+            android:background="@drawable/editboxtwo"
+            android:layout_marginStart="30dp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="Accept"
+            android:textColor="#fff"
+            android:background="@drawable/editboxtwo"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <android.support.constraint.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/circleImageView"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:layout_marginEnd="7dp"
+               android:src="@drawable/sampleimage"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toStartOf="@+id/editText"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <EditText
+               android:id="@+id/editText"
+               android:layout_width="268dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="7dp"
+               android:layout_marginTop="4dp"
+               android:layout_marginEnd="6dp"
+               android:layout_marginBottom="3dp"
+               android:background="@drawable/rectangle_shape"
+               android:padding="9dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toStartOf="@+id/searchView"
+               app:layout_constraintStart_toEndOf="@+id/circleImageView"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <android.support.v7.widget.SearchView
+               android:id="@+id/searchView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginStart="6dp"
+               android:layout_marginTop="1dp"
+               android:layout_marginEnd="16dp"
+               android:layout_marginBottom="1dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toEndOf="@+id/editText"
+               app:layout_constraintTop_toTopOf="parent">
+
+           </android.support.v7.widget.SearchView>
+
+       </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerPadding="50dp"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle"
+
+
+        >
+        <LinearLayout
+            android:id="@+id/layourProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="#fff"
+            android:onClick="Profile">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/sampleimage"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/id_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_gravity=""
+                    android:textColor="@color/generalColor"
+                    android:text="Daramola Adekunle"
+                    android:drawableEnd="@drawable/ic_expand_more_black_24dp"/>
+                <TextView
+                    android:id="@+id/userNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="NickName (omoVc)"
+                    android:layout_gravity=""
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+            <!--ImageView
+                android:id="@+id/chatId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_chat_black_24dp" /-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

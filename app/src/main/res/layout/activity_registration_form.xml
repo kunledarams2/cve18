@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kunledarams.cve2018.Activity.RegistrationForm"
+    android:orientation="vertical"
+    android:background="#A9A9A9">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/generalColor"
+        app:title="Profile"
+        app:titleTextColor="#fff"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/Imagerow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:onClick="selectImage"
+                android:src="@drawable/ic_add_a_photo_black_two_24dp" />
+
+            <!--Button
+                android:id="@+id/btselectimage"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+
+                android:layout_above="@+id/nameView"
+                android:layout_alignEnd="@+id/Imagerow"
+                android:layout_alignRight="@+id/Imagerow"
+                android:background="@drawable/images2"
+                android:textColor="@android:color/white" /-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/nameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:inputType="text"
+                android:padding="15sp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Phone"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/phoneView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:padding="15sp"
+                android:inputType="phone"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:text="Best Day in FUTA"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/bestdayView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/worstday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Worst Day in FUTA"
+                android:textColor="#000707"
+
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/worstdayView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:padding="15dp"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/Continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"
+                android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                android:padding="10dp"
+                android:onClick="Continue"/>
+            <LinearLayout
+                android:id="@+id/contLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+                    android:text=" Birthday "
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/birthdayViewViewt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView8"
+                    android:layout_marginTop="15dp"
+                    android:text="Plan After FUTA"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/planView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15dp"
+                    android:inputType="text"
+
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView9"
+                    android:layout_marginTop="15dp"
+                    android:text="Facebook"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/facebookView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:inputType="text"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="15dp"
+                    android:text="E-mail Address"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/emailView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView11"
+                    android:layout_marginTop="15dp"
+                    android:text="Best Lecturer"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/bestlecturerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView12"
+                    android:layout_marginTop="15dp"
+                    android:text="Best Course"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/bestcourseView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView13"
+                    android:layout_marginTop="15dp"
+                    android:text="Nick Name"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/NickNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView14"
+                    android:layout_marginTop="15dp"
+                    android:text="Matric Number"
+                    android:textColor="#000707"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/MatricView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/editbox"
+                    android:ems="20"
+                    android:padding="15sp"
+                    android:textColor="#4285f4"
+                    android:textSize="15sp"
+                    android:inputType="text"/>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/editboxtwo"
+                    android:onClick="RegMe"
+                    android:text="NEXT"
+                    android:textColor="#fff" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

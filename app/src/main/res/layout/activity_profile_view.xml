@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kunledarams.cve2018.Activity.ProfileView"
+    android:background="#000"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+           >
+
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="358dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp" />
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:divider="?android:dividerHorizontal"
+                android:showDividers="middle"
+                android:dividerPadding="100dp"
+                android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="#000707"
+                           android:textStyle="bold"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/nameView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daramola Adekunle Emmanuel"
+                            android:layout_gravity="center"
+
+                             />
+
+                     </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Birthday "
+
+                                android:textColor="#000707"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/birthdayView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DEC 15" />
+
+
+                        </LinearLayout>
+                          <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Social Media"
+                                android:textColor="#000707"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/facebookView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="null"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView2"
+                                android:text="Phone"
+                                android:textColor="#000707"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/phoneView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="08107536436"
+
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="E-mail Address"
+                                android:textColor="#000707"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/emailView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="daramoladekunle@gmail.com"
+                                />
+
+
+                        </LinearLayout>
+                            <TextView
+                                android:id="@+id/textViewD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_expand_more_black_24dp"
+                                android:onClick="Seeall"
+                                android:padding="5dp"
+                                android:text="See all"
+                                android:textColor="#000707"
+                                android:textSize="15dp"
+                                android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:id="@+id/seeall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:visibility="gone"
+                            android:divider="?android:dividerHorizontal"
+                            android:showDividers="middle"
+                            android:dividerPadding="100dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:text="Favourite Food"
+                                        android:textColor="#000707"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/FoodView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Eba"
+                                        />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/colortv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:text="Favourite Color"
+                                        android:textColor="#000707"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/colorView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Blue" />
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/textView9"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:text="Hobbies"
+                                        android:textColor="#000707"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/HobbView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Play ball"
+
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp"
+                                        android:text="Likes And Dislikes"
+                                        android:textColor="#000707"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:id="@+id/likesdislikesView"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Love"
+                                        />
+
+                                </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Parting Words To Fellow NICESSITES"
+                                    android:textColor="#000707"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/partWordView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Love All"
+                                    android:layout_gravity="center"
+                                    />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="15dp"
+                                    android:text="Where  You See Yourself In 5years (2023)"
+                                    android:textColor="#000707"
+                                    android:textStyle="bold"
+                                    android:layout_gravity="center"/>
+
+                                <TextView
+                                    android:id="@+id/planView"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="President of Nigeria"
+                                    android:layout_gravity="center"
+                                    />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textiew14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp"
+                                android:text="Life Quote"
+                                android:textColor="#000707"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/QuoteView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="President of Nigeria"
+                                android:layout_gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/ic_expand_less_black_24dp"
+                                android:onClick="SeeLess"
+                                android:padding="10dp"
+                                android:text="See less"
+                                android:textColor="#000707"
+                                android:textSize="15dp"
+                                android:layout_gravity="center"/>
+
+
+
+                        </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/Image"
+            android:layout_marginTop="5dp">
+            <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            </RelativeLayout>
+        </ScrollView-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

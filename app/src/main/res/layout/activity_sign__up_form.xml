@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kunledarams.cve2018.Activity.Sign_UpForm"
+    android:background="#A9A9A9"
+    android:orientation="vertical"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="SIGN UP"
+        app:titleTextColor="#fff"
+        android:background="@color/generalColor"
+        />
+
+    <TextView
+        android:id="@+id/textInstruSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:text="Note this App is for CVE18 your password must start with your matric number without '/'(Example: cve13.....)"
+        android:textColor="#161818"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/Imagerow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:onClick="selectImage"
+                android:src="@drawable/ic_add_a_photo_black_two_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Username"
+                android:layout_marginStart="10dp"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:inputType="text"
+                android:padding="15sp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginTop="15dp"
+                android:text="Email"
+                android:layout_marginStart="10dp"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:inputType="textEmailAddress"
+                android:padding="15sp"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="Password (Matric Number)"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/userPassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/worstday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="Password (Matric Number)"
+                android:textColor="#000707"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/userPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbox"
+                android:ems="20"
+                android:inputType="textPassword"
+                android:padding="15dp"
+
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/editboxtwo"
+                android:onClick="SignMEUP"
+                android:text="SIGN IN"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

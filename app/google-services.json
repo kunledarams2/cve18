@@ -1,0 +1,174 @@
+{
+  "project_info": {
+    "project_number": "858871324153",
+    "firebase_url": "https://onlineselect-da239.firebaseio.com",
+    "project_id": "onlineselect-da239",
+    "storage_bucket": "onlineselect-da239.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858871324153:android:03da854f54a36507",
+        "android_client_info": {
+          "package_name": "com.example.kunledarams.onlineselect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDYyzkse8gQhaOvAUyZkfWbwfO6QCmaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858871324153:android:e4c48084b2fdd9ee",
+        "android_client_info": {
+          "package_name": "com.kunledarams.alejotab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858871324153-aqs1vtcbgrqh8tmgh7hhpjdsflvkmdsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kunledarams.alejotab",
+            "certificate_hash": "e6a0ff8e6cd01baa6fa92c16c64430d791136c88"
+          }
+        },
+        {
+          "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDYyzkse8gQhaOvAUyZkfWbwfO6QCmaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858871324153:android:ca76b47e84048106",
+        "android_client_info": {
+          "package_name": "com.kunledarams.cve2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858871324153-d76764g041jg7l9spufqnalmg9lcpf1t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kunledarams.cve2018",
+            "certificate_hash": "e6a0ff8e6cd01baa6fa92c16c64430d791136c88"
+          }
+        },
+        {
+          "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDYyzkse8gQhaOvAUyZkfWbwfO6QCmaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858871324153:android:ae5a57df095f1821",
+        "android_client_info": {
+          "package_name": "com.kunledarams.datndat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858871324153-n9172r6skatvnbh9m4l9dipgapucmh5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kunledarams.datndat",
+            "certificate_hash": "e6a0ff8e6cd01baa6fa92c16c64430d791136c88"
+          }
+        },
+        {
+          "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNDYyzkse8gQhaOvAUyZkfWbwfO6QCmaE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858871324153-3on96iukqd238aq9m69b3ttv6et9crqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

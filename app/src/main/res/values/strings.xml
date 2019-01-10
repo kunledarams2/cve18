@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CVE2018</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="instruction">  1.   Please this application is for CVE Class 18 \n 2.   You must be a graduate of CVE class 18 to access this application
+    \n 3.  Your password must start with your matric number; (Example: cve13345kunle)</string>
+</resources>
